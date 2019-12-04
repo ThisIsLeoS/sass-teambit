@@ -1,0 +1,67 @@
+/* reset rules */
+
+h1,
+h2,
+p,
+ol,
+ul {
+  /* to overwrite bootstrap's CSS */
+  margin-bottom: 0;
+}
+
+input:focus {
+  /* to overwrite chrome's CSS */
+  outline: none;
+}
+
+ol,
+ul {
+  /* to overwrite bootstrap's CSS */
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* /reset rules */
+
+/* rules used or usable in different parts of the page */
+
+a {
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a svg {
+  -webkit-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+
+a svg path {
+  -webkit-transition: fill 0.15s linear;
+  transition: fill 0.15s linear;
+}
+
+/* /rules used or usable in different parts of the page */
+
+/* rules used in specific parts of the page */
+
+html {
+  /* to make a reference for the percentage heights of thix box's children */
+  height: 100%;
+  font-size: 14px;
+}
+
+body {
+  /* to make a reference for the percentage heights of thix box's children */
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* /rules used in specific parts of the page */
+
