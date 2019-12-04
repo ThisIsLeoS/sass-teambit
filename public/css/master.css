@@ -1,5 +1,10 @@
 /* reset rules */
 
+a:hover {
+  /* to overwrite bootstrap's CSS */
+  text-decoration: none;
+}
+
 h1,
 h2,
 p,
@@ -33,10 +38,6 @@ a {
   transition: color 0.15s linear;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 a svg {
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
@@ -45,6 +46,18 @@ a svg {
 a svg path {
   -webkit-transition: fill 0.15s linear;
   transition: fill 0.15s linear;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.button {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 8px 10px;
 }
 
 /* /rules used or usable in different parts of the page */
@@ -61,6 +74,67 @@ body {
   /* to make a reference for the percentage heights of thix box's children */
   height: 100%;
   font-family: Arial, sans-serif;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: flex;
+  height: 75px;
+  border-bottom: 1px solid #bdb5af;
+  font-size: 13px;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+nav .container .right-col {
+  display: -webkit-box;
+  display: flex;
+}
+
+nav .container .right-col > ul {
+  display: -webkit-box;
+  display: flex;
+}
+
+nav .container .right-col > ul > li {
+  display: -webkit-box;
+  display: flex;
+  margin-left: 45px;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+nav .container .right-col > ul > li a {
+  color: #58402c;
+  font-weight: bold;
+}
+
+nav .container .right-col > ul > li a:hover {
+  color: #30488f;
+}
+
+nav .container .right-col > ul > li a.button {
+  display: -webkit-box;
+  display: flex;
+  border-color: #30488f;
+  color: #30488f;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+nav .container .right-col > ul > li a.button:hover {
+  background-color: #30488f;
+  color: white;
+}
+
+nav .container .right-col > ul > li a.button:hover > svg path {
+  fill: white;
+}
+
+nav .container .right-col > ul > li a.button .sign-up-text {
+  margin-left: 5px;
 }
 
 /* /rules used in specific parts of the page */

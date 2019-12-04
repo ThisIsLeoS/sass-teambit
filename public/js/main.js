@@ -93,7 +93,9 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+$("a").click(function () {
+  return false;
+});
 
 /***/ }),
 

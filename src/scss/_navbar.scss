@@ -1,0 +1,53 @@
+nav {
+    .container {
+        display: flex;
+        height: 75px;
+        border-bottom: 1px solid rgb(189, 181, 175);
+        font-size: 13px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .right-col {
+            display: flex;
+
+            > ul {
+                display: flex;
+
+                > li {
+                    display: flex;
+                    margin-left: 45px;
+                    align-items: center;
+
+                    a {
+                        color: $primary-color;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: $nav-hover-color;
+                        }
+                    }
+
+                    a.button {
+                        display: flex;
+                        border-color: rgb(48, 72, 143);
+                        color: $nav-hover-color;
+                        align-items: center;
+
+                        &:hover {
+                            background-color: $nav-hover-color;
+                            color: white;
+
+                            > svg path {
+                                fill: white;
+                            }
+                        }
+
+                        .sign-up-text {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
