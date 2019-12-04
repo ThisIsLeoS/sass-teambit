@@ -93,8 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$("a").click(function () {
-  return false;
+$("a").click(function (event) {
+  event.prevetDefault();
 });
 
 /***/ }),

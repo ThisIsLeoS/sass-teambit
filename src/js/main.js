@@ -1,3 +1,3 @@
-$("a").click(function() {
-    return false;
+$("a").click(function(event) {
+    event.prevetDefault();
 });
